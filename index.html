@@ -53,18 +53,17 @@
               <option value="full">Matinee</option>
               <option value="child">Child</option>
             </select>
-            <select class="form-control" id="ticketAmount">
-              <option selected disabled>#</option>
-              <option>0</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
+            <div class="amount">
+               <div class="radio"><label><input type="radio" name="ticketAmount" value="0">0</label></div>
+               <div class="radio"><label><input type="radio" name="ticketAmount" value="1">1</label></div>
+               <div class="radio"><label><input type="radio" name="ticketAmount" value=2 checked="checked">2</label></div>
+               <div class="radio"><label><input type="radio" name="ticketAmount" value="3">3</label></div>
+           </div>
           </div>
         </div>  <!-- col div -->
-        <button type="submit" class="btn">Purchase</button>
+        <form id="form-button">
+          <button id="button">submit</button>
+        </form>
       </form>
 
     <div class="col-md-6">
